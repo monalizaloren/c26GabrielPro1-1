@@ -12,9 +12,10 @@ class CannonBall {
 
   remove(index) {
     Matter.Body.setVelocity(this.body, { x: 0, y: 0 });
-
-    setTimeout(() => {
-      Matter.World.remove(world, this.body);
+//Utilize o código que define um tempo especifico para algo acontecer
+    ???(() => {
+      //Utilize o código que remove do mundo
+      ???(world, this.body);
       delete balls[index];
     }, 1000);
   }
